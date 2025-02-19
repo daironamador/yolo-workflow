@@ -1,0 +1,13 @@
+name: YOLO Workflow
+
+on: [push]
+
+jobs:
+  run-yolo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Say YOLO
+        run: echo "🚀 YOLO! Se ejecutó un workflow en GitHub Actions 🎉"
